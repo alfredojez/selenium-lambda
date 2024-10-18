@@ -11,7 +11,7 @@ Before getting started, ensure you have the following:
 - Node.js and npm installed
 - GitHub account (for using GitHub Actions)
 
-## Getting Started 
+## Getting Started  
 1. **Clone the Repository**: 
    ```bash
    git clone https://github.com/wbytedev/wbyte-selenium-lambda.git
