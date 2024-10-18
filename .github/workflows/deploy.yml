@@ -6,7 +6,7 @@ on:
 env:
   CDK_VERSION: "2.126.0"
   AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
-  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_REGION: ${{ secrets.AWS_REGION_ID }}
   API_KEY: ${{ secrets.API_KEY }}  
   APPLICATION_TAG: ${{ vars.APPLICATION_TAG }}
   APPLICATION_NAME: "selenium-lambda"
@@ -29,7 +29,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ASSUME_ROLE_ARN }}
           role-session-name: github-action-role
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: ${{ secrets.AWS_REGION_ID }}
 
       - name: Bootstrap
         run: |
